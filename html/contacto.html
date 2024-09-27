@@ -5,74 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linkeo de CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
+    <title>Contáctanos</title>
 </head>
 <body>
     
-         <!-- Inicio del encabezado -->
-         <header class="encabezado">
-            <!-- Logo -->
-            <div class="logo">
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <!-- Logo -->
+        <div class="logo">
             <a href="index.html">
                 <img src="../img/logo.jpeg" alt="logoSitio">               
-             </a>
-             <!-- Fin logo -->
+            </a>
+        </div>
 
-               <!--Titulo-->
-               <a class="titulos" href="../index.html">CLÍNICA DENTAL MAYLLON</a>
+        <!-- Título y eslogan -->
+        <div class="titulo-eslogan">
+            <a class="titulos" href="../index.html">CLÍNICA DENTAL MAYLLON</a>
+            <h1 class="eslogan">Queremos verte sonreír</h1>
+        </div>
 
-             <!-- Eslogan -->
-             <h1 class="eslogan">Queremos verte sonreir</h1>
-            </div> 
-            
-
-         <!-- Inicio nav -->
-            <nav>
-                <ul class="menu">
-                  <li><a href="../html/servicios.html">Servicios</a></li>
-                  <li><a href="../html/especialistas.html">Nuestros Especialistas</a></li>
-                  <li><a href="../html/informacion.html">Información</a></li>
-                  <li><a href="../html/contacto.html">Contacto</a></li>
-                  <li><a href="../html/mapa.html">Mapa</a></li>
-                </ul>
-           </nav>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul class="menu">
+                <li><a href="./servicios.html">Nuestros Servicios</a></li>
+                <li><a href="./especialistas.html">Nuestros Especialistas</a></li>
+                <li><a href="./informacion.html">Información</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./mapa.html">Ubícanos</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Formularios -->
 
-    <Main>
-        <h1>Formulario de contacto</h1>
-        <p>Por cualquier consulta no dudes en contactarnos abajo.</p>
-    </Main>
-    <form class="Formulario">
-        <fieldset>
-            <legend><p></p>Formulario de contacto</legend>
+    <!-- Contenido principal -->
+    <main>
+        <div class="titulo-formulario">
+            <h1>Formulario de contacto</h1>
+            <p>Por cualquier consulta no dudes en contactarnos abajo.</p>
 
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email">
-            </div>
-            <div>
-                <label for="mensaje">Dejanos tu mensaje</label>
-                <textarea name="" id="mensaje" rows="10" cols="50"></textarea>
-            </div>
+            <form class="Formulario">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
 
-            <input type="submit">
-            <input type="reset">
-            
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="mensaje">Dejanos tu mensaje</label>
+                        <textarea id="mensaje" rows="10" cols="50"></textarea>
+                    </div>
 
-        </fieldset>
-    </form>   
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </fieldset>
+            </form>
+        </div>
+    </main>
 
-<footer>
-   <h1 class="pieNumero">+54 9 0381-000-000</h1>
-   <h1 class="pieCalle">San Juan 0000</h1>
-   <h1 class="pieEmail">clinicamayllon@clinica.com</h1>
-   <p>Todos los derechos resesrvados</p>
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        <div class="info-contacto">
+            <h1 class="pieNumero">+54 9 0381-000-000</h1>
+            <h1 class="pieCalle">San Juan 0000</h1>
+            <h1 class="pieEmail">clinicamayllon@clinica.com</h1>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
 
 </body>
 </html>
