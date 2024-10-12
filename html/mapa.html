@@ -6,52 +6,62 @@
     <!-- Linkeo de CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Ubícanos</title>
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
     
    <!-- Inicio del encabezado -->
    <header class="encabezado">
-    <!-- Logo -->
-    <div class="logo">
-    <a href="../index.html">
-        <img src="../img/logo.jpeg" alt="logoSitio">               
-     </a>
-     <!-- Fin logo -->
+        <!-- Logo -->
+        <div class="logo" data-aos="fade-down">
+            <a href="../index.html">
+                <img src="../img/logo.jpeg" alt="logoSitio">               
+            </a>
+        </div>
+        <!-- Fin logo -->
 
-     <!--Titulo-->
-     <a class="titulos" href="../index.html">CLÍNICA DENTAL MAYLLON</a>
+        <!-- Titulo -->
+        <a class="tituloHome" href="../index.html" data-aos="fade-up">CLÍNICA DENTAL MAYLLON</a>
 
-     <!-- Eslogan -->
-     <h1 class="eslogan">Queremos verte sonreir</h1>
-    </div> 
+        <!-- Eslogan -->
+        <h1 class="eslogan" data-aos="fade-up">Queremos verte sonreír</h1>
 
-                  <!-- Inicio nav -->
-                  <nav>
-                    <ul class="menu">
-                      <li><a href="./servicios.html">Nuestros Servicios</a></li>
-                      <li><a href="./especialistas.html">Nuestros Especialistas</a></li>
-                      <li><a href="./informacion.html">Información</a></li>
-                      <li><a href="./contacto.html">Contáctanos</a></li>
-                      <li><a href="./mapa.html">Ubícanos</a></li>
-                      </ul>
-               </nav>
+        <!-- Inicio nav -->
+        <nav data-aos="fade-in">
+            <ul class="menu">
+                <li><a href="./servicios.html">Nuestros Servicios</a></li>
+                <li><a href="./especialistas.html">Nuestros Especialistas</a></li>
+                <li><a href="./informacion.html">Información</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <li><a href="./mapa.html">Ubícanos</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Contenedor del mapa -->
+    <main>
+        <div class="mapa" data-aos="zoom-in">
+            <h1>Te brindamos nuestra ubicación vía <a class="google" href="https://www.google.com/maps/@-26.8238502,-65.2113421,21z?hl=es&entry=ttu">Google Maps</a> para que puedas encontrarnos mejor</h1>
+            <!-- Google maps de iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d222.53155873732686!2d-65.21132015764306!3d-26.82388763368869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1724027357972!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
 
- <div class="mapa">
-    <h1>Te brindamos nuestra ubicación vía <a class="google" href="https://www.google.com/maps/@-26.8238502,-65.2113421,21z?hl=es&entry=ttu">Google Maps</a> para que puedas encontrarnos mejor!</h1>
- </div>
-  <main>
-    <!-- Google maps de iframe -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d222.53155873732686!2d-65.21132015764306!3d-26.82388763368869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1724027357972!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </header>
+    <!-- Pie de página -->
+    <footer>
+        <div class="info-contacto" data-aos="fade-up">
+            <p class="pieNumero">Teléfono: +54 9 0381-000-000</p>
+            <p class="pieCalle">Dirección: San Juan 0000, San Miguel de Tucumán</p>
+            <p class="pieEmail">Email: <a href="mailto:clinicamayllon@clinica.com">clinicamayllon@clinica.com</a></p>
+            <p>Todos los derechos reservados © 2024 Clínica Dental Mayllon</p>
+        </div>
+    </footer>
 
-  <footer>
-   <h1 class="pieNumero">+54 9 0381-000-000</h1>
-   <h1 class="pieCalle">San Juan 0000</h1>
-   <h1 class="pieEmail">clinicamayllon@clinica.com</h1>
-   <p>Todos los derechos resesrvados</p>
-  </footer>
-  </main>
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>  
 </html>

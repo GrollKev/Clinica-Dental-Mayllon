@@ -14,8 +14,7 @@ body {
 }
 
 header {
-  background-image: url(../img/fondo.webp);
-  background-color: #d5b9ff;
+  background: url(../img/fondo.webp), #d5b9ff;
   padding: 20px;
   text-align: center;
 }
@@ -36,7 +35,7 @@ header nav ul li {
   margin: 10px;
 }
 
-.menu a {
+.menu a, .nav-item {
   text-decoration: none;
   color: #000000;
   padding: 10px 20px;
@@ -45,7 +44,7 @@ header nav ul li {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.menu a:hover {
+.menu a:hover, .nav-item:hover {
   background-color: #d3f5ff;
 }
 
@@ -60,7 +59,7 @@ header nav ul li {
   text-align: center;
 }
 
-.titulos {
+.tituloHome {
   font-size: 2.5rem;
   font-weight: bold;
   display: inline-block;
@@ -81,23 +80,42 @@ header nav ul li {
   margin: 20px;
 }
 
+.titulos {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Formulario */
 .titulo-formulario {
   text-align: center;
+  margin-bottom: 20px;
+}
+.titulo-formulario h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+.titulo-formulario p {
+  font-size: 1.2rem;
+  color: #6a6b6c;
+  margin-bottom: 30px;
 }
 
 .Formulario {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
   border: 1px solid #d5b9ff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}
-.Formulario label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .Formulario input[type=text],
 .Formulario input[type=email],
@@ -125,8 +143,85 @@ header nav ul li {
   color: #000000;
 }
 
+.Formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d5b9ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Formulario fieldset {
+  border: none;
+}
+
+.Formulario label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+.Formulario input[type=text],
+.Formulario input[type=email],
+.Formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.Formulario textarea {
+  resize: vertical;
+}
+
+.Formulario input[type=submit],
+.Formulario input[type=reset] {
+  padding: 12px 20px;
+  background-color: #d5b9ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Formulario input[type=submit]:hover,
+.Formulario input[type=reset]:hover {
+  background-color: #d3f5ff;
+  color: #000000;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapa iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 450px;
+  width: 100%;
+  border: 0;
+}
+
 .mapa {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
+  padding: 20px 0;
+}
+
+.mapa h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000000;
 }
 
 footer {
@@ -148,8 +243,8 @@ footer .pieCalle, footer .pieEmail, footer .pieNumero {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
-  .titulos {
-    font-size: 2rem;
+  .tituloHome {
+    font-size: 1rem;
     text-align: center;
   }
   iframe {

@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    
     <!-- Linkeo de CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contáctanos</title>
+
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
     
     <!-- Encabezado -->
-    <header class="encabezado">
+    <header class="encabezado" data-aos="fade-down">
         <!-- Logo -->
         <div class="logo">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="../img/logo.jpeg" alt="logoSitio">               
             </a>
         </div>
 
         <!-- Título y eslogan -->
-        <div class="titulo-eslogan">
-            <a class="titulos" href="../index.html">CLÍNICA DENTAL MAYLLON</a>
+        <div class="titulo-eslogan" data-aos="fade-up">
+            <a class="tituloHome" href="../index.html">CLÍNICA DENTAL MAYLLON</a>
             <h1 class="eslogan">Queremos verte sonreír</h1>
         </div>
 
         <!-- Menú de navegación -->
-        <nav>
+        <nav data-aos="fade-in">
             <ul class="menu">
                 <li><a href="./servicios.html">Nuestros Servicios</a></li>
                 <li><a href="./especialistas.html">Nuestros Especialistas</a></li>
@@ -38,43 +42,49 @@
 
     <!-- Contenido principal -->
     <main>
-        <div class="titulo-formulario">
+        <div class="titulo-formulario" data-aos="zoom-in">
             <h1>Formulario de contacto</h1>
             <p>Por cualquier consulta no dudes en contactarnos abajo.</p>
 
-            <form class="Formulario">
+            <form class="Formulario" data-aos="fade-up">
                 <fieldset>
-                    <legend>Formulario de contacto</legend>
-
-                    <div>
+                    <div class="form-group" data-aos="fade-left">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
                     </div>
-                    <div>
+                    <div class="form-group" data-aos="fade-right">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
                     </div>
-                    <div>
+                    <div class="form-group" data-aos="fade-left">
                         <label for="mensaje">Dejanos tu mensaje</label>
-                        <textarea id="mensaje" rows="10" cols="50"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
                     </div>
-
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Restablecer">
+                    
+                    <div class="form-actions" data-aos="fade-right">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Restablecer">
+                    </div>
                 </fieldset>
             </form>
         </div>
     </main>
 
-    <!-- Pie de página -->
-    <footer>
-        <div class="info-contacto">
-            <h1 class="pieNumero">+54 9 0381-000-000</h1>
-            <h1 class="pieCalle">San Juan 0000</h1>
-            <h1 class="pieEmail">clinicamayllon@clinica.com</h1>
-            <p>Todos los derechos reservados</p>
-        </div>
-    </footer>
+   <!-- Pie de página -->
+<footer data-aos="fade-up">
+    <div class="info-contacto">
+        <p class="pieNumero">Teléfono: +54 9 0381-000-000</p>
+        <p class="pieCalle">Dirección: San Juan 0000, San Miguel de Tucumán</p>
+        <p class="pieEmail">Email: <a href="mailto:clinicamayllon@clinica.com">clinicamayllon@clinica.com</a></p>
+        <p>Todos los derechos reservados © 2024 Clínica Dental Mayllon</p>
+    </div>
+</footer>
+
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

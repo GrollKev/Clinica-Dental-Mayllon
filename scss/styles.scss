@@ -1,22 +1,22 @@
+// Variables
+$primary-bg: #d3f5ff;
+$secondary-bg: #d5b9ff;
+$text-color: #000000;
+$accent-color: #ffffff;
+$border-color: #d5b9ff;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$hover-bg: #d3f5ff;
+$font-family: "Roboto", sans-serif;
 
-// Estilos de variables
-$colorPrimario: #d3f5ff;
-$colorSecundario: #d5b9ff;
-$colorBlanco: #ffffff;
-$colorNegro: #000000;
-$colorGris: #6a6b6c;
-$tipografia: 'Roboto', sans-serif;
-
-// Box model
+// Reset y globales
 * {
   box-sizing: border-box;
 }
 
-// Estilos generales
 html {
-  background-color: $colorPrimario;
+  background-color: $primary-bg;
   background-image: url(../img/fondo.webp);
-  font-family: $tipografia;
+  font-family: $font-family;
 }
 
 body {
@@ -24,10 +24,10 @@ body {
   padding: 0;
 }
 
-// Encabezado
+
+// Header
 header {
-  background-image: url(../img/fondo.webp);
-  background-color: $colorSecundario;
+  background: url(../img/fondo.webp), $secondary-bg;
   padding: 20px;
   text-align: center;
 
@@ -51,38 +51,41 @@ header {
   }
 }
 
-.menu a {
+
+// Menú
+.menu a, .nav-item {
   text-decoration: none;
-  color: $colorNegro;
+  color: $text-color;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: $colorBlanco;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: $accent-color;
+  box-shadow: 0px 4px 6px $shadow-color;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: $colorPrimario;
+    background-color: $hover-bg;
   }
 }
 
-// Contenido principal
+// Portada
 .portada {
   margin: 0 auto;
   padding: 20px;
   max-width: 1200px;
   font-size: 18px;
   line-height: 1.6;
-  background-color: $colorPrimario;
-  border: 1px solid $colorSecundario;
+  background-color: $primary-bg;
+  border: 1px solid $secondary-bg;
   text-align: center;
 }
 
-.titulos {
+// Títulos y eslogan
+.tituloHome {
   font-size: 2.5rem;
   font-weight: bold;
   display: inline-block;
   vertical-align: middle;
-  color: $colorNegro;
+  color: $text-color;
   margin-left: 10px;
 }
 
@@ -90,41 +93,63 @@ header {
   font-size: 1.2rem;
   font-style: italic;
   margin-top: 10px;
-  color: $colorGris;
+  color: #6a6b6c;
 }
 
+// Contenido
 .contenido {
   font-size: 1rem;
   margin: 20px;
 }
 
-// Estilo del Formulario
-.titulo-formulario {
-  text-align: center;
+.titulos{
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
-.Formulario {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: $colorBlanco;
-  border: 1px solid $colorSecundario;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.video-container{
+  max-width: 800px;      
+  margin: 0 auto;        
+  text-align: center;     
+  padding: 20px 0;   
+}
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+/* Formulario */
+.titulo-formulario {
+  text-align: center; 
+  margin-bottom: 20px; 
+
+  h1 {
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: $text-color;
   }
 
+  p {
+    font-size: 1.2rem; 
+    color: #6a6b6c; 
+    margin-bottom: 30px; 
+  }
+}
+
+// Estilo para centrar y ajustar el formulario
+.Formulario {
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: $accent-color;
+  border: 1px solid $secondary-bg;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Estilo para los campos del formulario
   input[type="text"],
   input[type="email"],
   textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid $colorGris;
+    border: 1px solid #6a6b6c;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -132,41 +157,118 @@ header {
   input[type="submit"],
   input[type="reset"] {
     padding: 10px 20px;
-    background-color: $colorSecundario;
-    color: $colorBlanco;
+    background-color: $secondary-bg;
+    color: $accent-color;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $colorPrimario;
-      color: $colorNegro;
+      background-color: $hover-bg;
+      color: $text-color;
     }
   }
 }
 
-//Mapa
-.mapa{
-    text-align: center;
+.Formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: $accent-color;
+  border: 1px solid $secondary-bg;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.Formulario fieldset {
+  border: none;
+}
+
+.Formulario label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #333;
+}
+
+.Formulario input[type="text"],
+.Formulario input[type="email"],
+.Formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.Formulario textarea {
+  resize: vertical;
+}
+
+.Formulario input[type="submit"],
+.Formulario input[type="reset"] {
+  padding: 12px 20px;
+  background-color: $secondary-bg;
+  color: $accent-color;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Formulario input[type="submit"]:hover,
+.Formulario input[type="reset"]:hover {
+  background-color: $hover-bg;
+  color: $text-color;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+// Mapa
+.mapa iframe {
+  display: block;        
+  margin: 0 auto;        
+  max-width: 100%;       
+  height: 450px;         
+  width: 100%;          
+  border: 0;             
+}
+
+.mapa {
+  max-width: 800px;      
+  margin: 0 auto;        
+  text-align: center;     
+  padding: 20px 0;     
+}  
+
+  .mapa h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: $text-color;   
+
+    }
 
 // Footer
 footer {
-  background-color: $colorSecundario;
+  background-color: $secondary-bg;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
-  color: $colorNegro;
+  color: $text-color;
 
   .pieCalle, .pieEmail, .pieNumero {
     margin: 5px 0;
   }
 }
 
-// Media Queries
-
-// Tablets
+// Media queries
 @media (max-width: 768px) {
   header img {
     width: 80px;
@@ -177,15 +279,15 @@ footer {
     font-size: 0.9rem;
   }
 
-  .titulos {
-    font-size: 2rem;
+  .tituloHome {
+    font-size: 1rem;
     text-align: center;
   }
 
   iframe {
     width: 100%;
     height: 350px;
-    padding: 10%
+    padding: 10%;
   }
 
   .Formulario {
@@ -203,7 +305,6 @@ footer {
   }
 }
 
-// Móviles
 @media (max-width: 480px) {
   header img {
     width: 60px;
